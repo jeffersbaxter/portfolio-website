@@ -1,0 +1,27 @@
+body {
+    background-color: #070707;
+}
+
+.project-list-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-column-gap: 6px;
+    grid-row-gap:6px;
+}
+
+.mint-text {
+    color: #ADF1D2;
+}
+
+.plum-text {
+    color: #553555;
+}
+
+.project-container {
+    background-color: white;
+}
+
+.project-title {
+    text-decoration: none;
+    color: #553555;
+}
