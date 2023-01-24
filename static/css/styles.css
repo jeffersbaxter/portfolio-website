@@ -5,9 +5,10 @@ body {
 
 .main-container {
     scroll-snap-type: y mandatory;
-    overflow: scroll;
     display: flex;
     min-height: 100vh;
+    overflow-y: scroll;
+    flex-direction: column;
 }
 
 .main-container .content-row {
@@ -18,5 +19,16 @@ body {
 }
 
 .content-container {
-    width: 100%;
+    width: 61.8%;
+}
+
+.page {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+.snap-container {
+    max-height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 }
