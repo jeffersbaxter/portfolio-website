@@ -12,11 +12,29 @@
 </head>
     <body>
         <div class="main-container">
-            <div class="content-container d-flex align-content-center flex-wrap">
-                <p>Hello, my name is</p>
-                <h1>Jeffers Baxter</h1>
-                <p>I am a <strong>software developer</strong> in the Seattle area. My stack includes but is not limited to: Python, AWS Amplify and React.
-                </p>
+            <div class="snap-container">
+                <div class="page container d-flex justify-content-center align-items-center flex-wrap">
+                    <div class="content-container">
+                        <p>My name is</p>
+                        <h1>Jeffers Baxter</h1>
+                        <p>I am a <strong>software developer</strong> in the Seattle area. I enjoy working with Python, Flask and AWS Amplify.
+                        </p>
+                    </div>
+                </div>
+                {% for link in links: %}
+                <div class="page container d-flex justify-content-center align-items-center flex-wrap">
+                    <div class="content-container">
+                        <div class="project">
+                            <a href="{{ link.url }}">
+                                <h3>{{ link.title }}</h3>
+                            </a>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
             </div>
         </div>
     </body>
