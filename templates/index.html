@@ -11,22 +11,12 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
     <body>
-        <div class="container">
-            <div class="row">
-                <h1>Portfolio Site</h1>
-                <div class="project-list-container">
-                    {% for link in links: %}
-                        <div class="project-container card">
-                            <i class="{{link.icon_classes}} mint-text"></i>
-                            <a href="{{link.url}}" class="project-title plum-text">{{ link.title }}</a>
-                        </div>
-                    {% endfor %}
-                </div>
-<!--                <p class="col-8 card">-->
-<!--                    My name is Jeffers Baxter and I am a Python developer from the Seattle area.-->
-<!--                    I have 7 years experience in frontend development and graph databases.-->
-<!--                    Here are a collection of my Python projects, which range from Python scripting to web development.-->
-<!--                </p>-->
+        <div class="main-container">
+            <div class="content-container d-flex align-content-center flex-wrap">
+                <p>Hello, my name is</p>
+                <h1>Jeffers Baxter</h1>
+                <p>I am a <strong>software developer</strong> in the Seattle area. My stack includes but is not limited to: Python, AWS Amplify and React.
+                </p>
             </div>
         </div>
     </body>
